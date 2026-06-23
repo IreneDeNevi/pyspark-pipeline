@@ -1,19 +1,19 @@
-# PySpark Assignment: Data Engineering Task - Part 2
+# PySpark Data Engineering Task 
 
 ## Overview
 
-This Part2 project is a notebook-driven PySpark data pipeline for customer and order analytics. It loads raw CSV files, performs data cleaning and transformation, computes customer and city-level metrics, and writes final outputs to Parquet and CSV.
+This project is a notebook-driven PySpark data pipeline for customer and order analytics. It loads raw CSV files, performs data cleaning and transformation, computes customer and city-level metrics, and writes final outputs to Parquet and CSV.
 
 The main artifact is the notebook:
 
-- `assignment_part2_pyspark.ipynb`
+- `assignment_pyspark.ipynb`
 
 ## Quick Start
 
 ### 1. Activate your environment
 
 ```bash
-source /home/$(whoami)/.venvs/part2-assignment/bin/activate
+source /home/$(whoami)/.venvs/assignment/bin/activate
 ```
 
 ### 2. Install dependencies
@@ -29,7 +29,7 @@ pip install -r requirements.txt
 jupyter lab --ip=127.0.0.1 --port=8888
 ```
 
-Open `assignment_part2_pyspark.ipynb` and run cells top to bottom.
+Open `assignment_pyspark.ipynb` and run cells top to bottom.
 
 ---
 
@@ -62,9 +62,9 @@ java -version
 ### Step 2: Create virtual environment
 
 ```bash
-cd /your-directory/data-engineer-assignment/Part2
-python3 -m venv /home/$(whoami)/.venvs/part2-assignment
-source /home/$(whoami)/.venvs/part2-assignment/bin/activate
+cd /your-directory/data-engineer-assignment
+python3 -m venv /home/$(whoami)/.venvs/assignment
+source /home/$(whoami)/.venvs/assignment/bin/activate
 ```
 
 ### Step 3: Install Python packages
@@ -86,8 +86,8 @@ python --version
 ## Project Structure
 
 ```text
-Part2/
-|-- assignment_part2_pyspark.ipynb
+data-engineer-assignment/
+|-- assignment_pyspark.ipynb
 |-- Dockerfile
 |-- README.md
 |-- requirements.txt
@@ -103,7 +103,7 @@ Part2/
 
 ### File Roles
 
-- `assignment_part2_pyspark.ipynb`:  pipeline (load, clean, transform, aggregate, join, visualize, export, verify)
+- `assignment_pyspark.ipynb`:  pipeline (load, clean, transform, aggregate, join, visualize, export, verify)
 - `requirements.txt`: Python dependencies
 - `Dockerfile`: containerized environment for Jupyter + PySpark
 - `data/`: source CSV input files
