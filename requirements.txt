@@ -1,0 +1,14 @@
+# PySpark Assignment - Part 2
+# WSL/Linux Compatible Requirements
+
+# Core Data Processing
+pyspark>=4.0.0
+pyarrow>=14.0.0
+
+# Jupyter & Visualization
+jupyterlab>=4.0.0
+matplotlib>=3.10.0
+pandas>=2.0.0
+
+# Utilities
+pypdf>=6.0.0
